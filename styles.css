@@ -44,3 +44,57 @@ h1 {
   font-weight: bold;
   font-size: 1.5rem;
 }
+
+
+form {
+  padding: 20px;
+  background-color: #eee;
+  max-width: 400px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+input {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+button:hover {
+  background-color: blue;
+  color: white;
+  border: 2px solid blue;
+}
+
+.result {
+  padding: 40px;
+  background-color: #eee;
+  border-radius: 10px;
+  width: 400px;
+}
+
+
+
+.resultActive {
+  margin: 0px;
+  display: inline-block;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: azure;
+  font-weight: 500;
+
+}

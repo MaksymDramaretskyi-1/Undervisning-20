@@ -16,8 +16,27 @@
       <a href="/" aria-current="page">Home</a>
       <a href="/page2.html">Other page</a>
     </nav>
-    <main>
+    <main id="home" class="sectionHero">
       <h1>Home page</h1>
+      <div class = " sectionForm" >
+        <form action="shoppingItem">
+          Varer til handlelisten
+          <input type="text" name="shoppingItem" id="shoppingItem"
+          placeholder="Skriv en vare...">
+        </form>
+
+        <div>
+          <button id="pushButton" >Add</button>
+          <button id="popButton" >Pop</button>
+          <button id="unshiftButton">Unshift</button>
+          <button id="shiftButton" >Shift</button>
+          <button id="deleteButton" >Delete list</button>
+        </div>
+
+        <div class="result">
+          <p id="displayItems"> <!--Får innhold fra JS --></p>
+        </div>
+      </div>
     </main>
   </body>
 </html>

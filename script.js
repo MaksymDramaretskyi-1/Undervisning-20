@@ -66,9 +66,24 @@ shiftButton.addEventListener("click", function(){
 });
 */
 
+
+function showError(message) {
+  errorMessage.textContent = message;
+  errorPopup.classList.add("show");
+}
+
+function hideError() {
+  errorPopup.classList.remove("show");
+}
+
+
+
+
 function shoppingList(event) {
   const shoppingItemValue = shoppingItem.value;
   const buttonId = event.target.id;
+
+  hideError(); // Skjul feilen før hver operasjon
 
   if ( buttonId === "pushButton"){
     // All kode for push button
@@ -79,7 +94,7 @@ function shoppingList(event) {
         // document.getElementById("displayItems").classList.add("resultActive")
 
       } else {
-          console.log("Fyll inn innhold");
+        showError("Vennligst skriv inn et element som skal legges til.");
       };
 
   } else if( buttonId === "popButton"){

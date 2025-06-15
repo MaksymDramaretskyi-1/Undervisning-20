@@ -20,15 +20,15 @@ console.log(fruitBowl);
 //
 const shoppingItem = document.getElementById("shoppingItem");
 const pushButton = document.getElementById("pushButton");
-
 const popButton = document.getElementById("popButton");
 const unshiftButton = document.getElementById("unshiftButton");
-
 const shiftButton = document.getElementById("shiftButton");
 const displayItems = document.getElementById("displayItems");
 const deleteButton = document.getElementById("deleteButton");
 
-console.log(shoppingItem, pushButton, popButton, unshiftButton, shiftButton, displayItems, deleteButton);
+const errorPopup = document.getElementById("errorPopup");
+const errorMessage = document.getElementById("errorMessage");
+const closeError = document.getElementById("closeError");
 
 
 /*pushButton.addEventListener("click", function(){
@@ -91,34 +91,45 @@ function shoppingList(event) {
         fruitBowl.push(shoppingItemValue);
         displayItems.textContent = fruitBowl.join(", ");
         shoppingItem.value = "";
-        // document.getElementById("displayItems").classList.add("resultActive")
 
       } else {
         showError("Vennligst skriv inn et element som skal legges til.");
       };
 
   } else if( buttonId === "popButton"){
-    // All kode for pop button
-    fruitBowl.pop();
-    displayItems.textContent = fruitBowl.join(", ");
 
-
+    if (fruitBowl.length === 0) {
+      showError("Feil: Listen er allerede tom, det er ingenting å slette.");
+    } else {
+      fruitBowl.pop();
+      displayItems.textContent = fruitBowl.join(", ");
+    }
 
 
   } else if ( buttonId === "unshiftButton"){
-    // All kode for unshift button
-    const shoppingItemValue = shoppingItem.value;
-    fruitBowl.unshift(shoppingItemValue);
-    displayItems.textContent = fruitBowl.join(", ");
-    shoppingItem.value = "";
+    if (shoppingItemValue) {
+      fruitBowl.unshift(shoppingItemValue);
+      displayItems.textContent = fruitBowl.join(", ");
+      shoppingItem.value = "";
+    } else {
+      showError("Vennligst skriv inn et element som skal legges til.");
+    }
 
   } else if (buttonId === "shiftButton"){
-    // Alle ode for shiftButton
-    fruitBowl.shift();
-    displayItems.textContent = fruitBowl.join(",");
+    if (fruitBowl.length === 0) {
+      showError("Feil: Listen er allerede tom, det er ingenting å slette.");
+    } else {
+      fruitBowl.shift();
+      displayItems.textContent = fruitBowl.join(",");
+    }
 
   } else if (buttonId === "deleteButton"){
-    //
+    if (fruitBowl.length === 0) {
+      showError("Feil: Listen er allerede tom.");
+    } else {
+      fruitBowl.length = 0;
+      displayItems.innerHTML = "Listen er ryddet.";
+    }
   
   } else {
     // All kode for shiftButton

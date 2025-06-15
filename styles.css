@@ -98,3 +98,33 @@ button:hover {
   font-weight: 500;
 
 }
+
+
+.error-popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #f44336;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  display: none;
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+}
+
+.error-popup.show {
+  display: block;
+  opacity: 1;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 15px;
+}

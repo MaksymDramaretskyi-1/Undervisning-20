@@ -84,6 +84,7 @@ body {
   width: 50%;
   display: inline-block;
   /* flex-wrap: wrap; */
+
   transition: transform var(--transition), box-shadow var(--transition);
   overflow: hidden;
 }
@@ -94,10 +95,13 @@ body {
 }
 
 .sectionForm {
-  flex: 1 1 50%;
+  display: block;
   padding: 32px;
   width: 500px;
-  border-right: 1px solid var(--gray-border);
+  margin-left: 20%;
+  border-radius: 10px;
+  border: 2px solid var(--gray-border);
+  margin-bottom: 100px;
 }
 
 .sectionForm form {

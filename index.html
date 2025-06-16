@@ -13,31 +13,26 @@
   </head>
   <body>
     <main id="home" class="sectionHero">
-      <div class="sectionForm">
-        <form id="shoppingForm" action="shoppingItem" onsubmit="return false;">
+  
+      <div class = " sectionForm" >
+        <form action="shoppingItem">
           Varer til handlelisten
-          <input type="text" name="shoppingItem" id="shoppingItem" placeholder="Skriv en vare...">
-          <input type="number" name="shoppingPrice" id="shoppingPrice" placeholder="Skriv en pris..." min="0" step="0.01" style="margin-top:10px;">
+          <input type="text" name="shoppingItem" id="shoppingItem"
+          placeholder="Skriv en vare...">
         </form>
-    
+
         <div>
-          <button id="pushButton">Add</button>
-          <button id="popButton">Pop</button>
+          <button id="pushButton" >Add</button>
+          <button id="popButton" >Pop</button>
           <button id="unshiftButton">Unshift</button>
-          <button id="shiftButton">Shift</button>
-          <button id="deleteButton">Delete</button> 
+          <button id="shiftButton" >Shift</button>
+          <button id="deleteButton" >Delete list</button>
+        </div>
+
+        <div class="result">
+          <p id="displayItems"> <!--Får innhold fra JS --></p>
         </div>
       </div>
-      
-      <div class="result">
-        <p id="displayItems"></p>
-        <p id="totalPrice" style="margin-top:20px; font-weight:bold;"></p>
-      </div>
-    
-      <div id="errorPopup" class="error-popup">
-        <span id="errorMessage"></span>
-        <button id="closeError" class="close-btn">&times;</button>
-      </div>
-    </main>    
+    </main>
   </body>
 </html>

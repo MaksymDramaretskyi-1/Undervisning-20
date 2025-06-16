@@ -28,14 +28,62 @@ body {
   padding: 16px;
 }
 
+/*Cards products styles*/
+
+.product-grid {
+  padding: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 16px;
+}
+
+.product-info h2 {
+  font-size: 18px;
+  margin: 0 0 8px;
+}
+
+.product-info .price {
+  color: #6366f1;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
 .sectionHero {
   background: var(--white);
   border-radius: var(--radius);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-  max-width: 900px;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+  /* max-width: 900px; */
+  width: 50%;
+  display: inline-block;
+  /* flex-wrap: wrap; */
   transition: transform var(--transition), box-shadow var(--transition);
   overflow: hidden;
 }
@@ -48,6 +96,7 @@ body {
 .sectionForm {
   flex: 1 1 50%;
   padding: 32px;
+  width: 500px;
   border-right: 1px solid var(--gray-border);
 }
 
@@ -71,7 +120,7 @@ body {
 }
 
 .sectionForm form .priceInput {
-  /* те же стили, что у text input */
+  /* Samme stiler som tekstinndata */
   width: 100%;
   padding: 16px 20px;
   border: 2px solid var(--gray-border);
@@ -95,6 +144,33 @@ body {
   font-style: italic;
 }
 
+/*Legg til en stil for den andre inndataen (for eksempel type="tall")*/
+.sectionForm form input[type="number"] {
+  width: 100%;
+  padding: 16px 20px;
+  border: 2px solid var(--gray-border);
+  border-radius: var(--radius);
+  font-size: 16px;
+  margin-top: 8px;
+  transition: border-color var(--transition);
+  font-family: inherit;
+  color: var(--text);
+  box-sizing: border-box;
+}
+
+.sectionForm form input[type="number"]:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 6px rgba(99, 102, 241, 0.5);
+}
+
+/* Samme plassholderdesign */
+.sectionForm form input[type="number"]::placeholder {
+  color: #a1a1aa;
+  font-style: italic;
+}
+
+
 .sectionForm div {
   display: flex;
   flex-wrap: wrap;
@@ -110,6 +186,7 @@ body {
   color: var(--white);
   font-size: 16px;
   font-weight: 500;
+  width: 10px;
   cursor: pointer;
   transition: all var(--transition);
   box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);

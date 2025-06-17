@@ -2,70 +2,70 @@
     {
       "id": 1,
       "name": "Apple",
-      "price": 1.20,
+      "price": 10.20,
       "category": "Fruit",
       "image": "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "id": 2,
       "name": "Banana",
-      "price": 0.99,
+      "price": 20.00,
       "category": "Fruit",
       "image": "https://images.unsplash.com/photo-1543218024-57a70143c369?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "id": 3,
       "name": "Strawberry",
-      "price": 2.50,
+      "price": 22.50,
       "category": "Berry",
       "image": "https://images.unsplash.com/photo-1587393855524-087f83d95bc9?q=80&w=760&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "id": 4,
       "name": "Orange",
-      "price": 1.10,
+      "price": 10.10,
       "category": "Fruit",
       "image": "https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "id": 5,
       "name": "Potato",
-      "price": 0.60,
+      "price": 40.60,
       "category": "Vegetable",
       "image": "https://images.unsplash.com/photo-1590165482129-1b8b27698780?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "id": 6,
       "name": "Carrot",
-      "price": 0.80,
+      "price": 10.80,
       "category": "Vegetable",
       "image": "https://images.unsplash.com/photo-1590868309235-ea34bed7bd7f?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "id": 7,
       "name": "Blueberry",
-      "price": 3.10,
+      "price": 23.10,
       "category": "Berry",
       "image": "https://images.unsplash.com/photo-1587242155092-d126d2db782f?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "id": 8,
       "name": "Peach",
-      "price": 2.00,
+      "price": 22.00,
       "category": "Fruit",
       "image": "https://images.unsplash.com/photo-1570978561297-793391262fea?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "id": 9,
       "name": "Grapes",
-      "price": 2.30,
+      "price": 22.30,
       "category": "Fruit",
       "image": "https://images.unsplash.com/photo-1631299106224-aae61c217164?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "id": 10,
       "name": "Watermelon",
-      "price": 4.50,
+      "price": 14.50,
       "category": "Fruit",
       "image": "https://images.unsplash.com/photo-1621961048737-a9993789e1ad?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }

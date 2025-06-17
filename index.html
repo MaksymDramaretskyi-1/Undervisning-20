@@ -13,32 +13,49 @@
   </head>
   <body>
     <main id="home" class="sectionHero">
-      <div>
+      <div class="block_products">
         <div id="productGrid" class="product-grid"></div>
       </div>
       
       <div class="sectionForm">
+        <div id="errorPopup" class="error-popup">
+          <span id="errorMessage"></span>
+          <button id="closeError" class="close-btn-close">
+            &times;
+          </button>
+        </div>
         <form action="shoppingItem" onsubmit="return false;">
           Varer til handlelisten
           <input type="text" name="shoppingItem" id="shoppingItem" placeholder="Skriv en vare...">
           <input type="number" name="priceItem" id="priceItem" placeholder="Pris (NOK)" min="0" step="0.01">
-          
-          <div id="errorPopup" class="error-popup">
-            <span id="errorMessage"></span>
-            <button id="closeError" class="close-btn">
-              <!-- &times; -->
-            </button>
-          </div>
         </form>
     
         <div>
-          <button id="pushButton">Add</button>
-          <button id="popButton">Pop</button>
-          <button id="unshiftButton">Unshift</button>
-          <button id="shiftButton">Shift</button>
-          <button id="deleteButton">Delete list</button>
+          <button id="pushButton" type="button" class="button-add-styles">
+            <svg width="41" height="41" viewBox="0 0 601 601" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M188.534 300.224H300.224M300.224 300.224H411.913M300.224 300.224V188.534M300.224 300.224V411.913" stroke="green" stroke-width="41.8836" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M300.224 579.447C454.433 579.447 579.447 454.433 579.447 300.224C579.447 146.013 454.433 21 300.224 21C146.013 21 21 146.013 21 300.224C21 454.433 146.013 579.447 300.224 579.447Z" stroke="green" stroke-width="41.8836" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <button id="popButton" class="button-basket">Pop</button>
+          <button id="unshiftButton" class="button-basket">Unshift</button>
+          <button id="shiftButton" class="button-basket">Shift</button>
+
+          <button id="deleteButton" class="button-add-styles">
+            <svg width="41" height="41" viewBox="0 0 560 639" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M40.8569 578.791C40.8569 594.66 47.1608 609.879 58.3818 621.1C69.6027 632.32 84.8217 638.624 100.691 638.624H459.693C475.561 638.624 490.78 632.32 502.001 621.1C513.222 609.879 519.526 594.66 519.526 578.791V159.955H40.8569V578.791ZM379.914 259.678C379.914 254.388 382.016 249.315 385.756 245.575C389.496 241.835 394.569 239.733 399.859 239.733C405.148 239.733 410.221 241.835 413.962 245.575C417.702 249.315 419.803 254.388 419.803 259.678V538.902C419.803 544.191 417.702 549.264 413.962 553.005C410.221 556.745 405.148 558.846 399.859 558.846C394.569 558.846 389.496 556.745 385.756 553.005C382.016 549.264 379.914 544.191 379.914 538.902V259.678ZM260.247 259.678C260.247 254.388 262.348 249.315 266.089 245.575C269.829 241.835 274.902 239.733 280.192 239.733C285.481 239.733 290.554 241.835 294.294 245.575C298.035 249.315 300.136 254.388 300.136 259.678V538.902C300.136 544.191 298.035 549.264 294.294 553.005C290.554 556.745 285.481 558.846 280.192 558.846C274.902 558.846 269.829 556.745 266.089 553.005C262.348 549.264 260.247 544.191 260.247 538.902V259.678ZM140.58 259.678C140.58 254.388 142.681 249.315 146.421 245.575C150.162 241.835 155.235 239.733 160.524 239.733C165.814 239.733 170.887 241.835 174.627 245.575C178.367 249.315 180.469 254.388 180.469 259.678V538.902C180.469 544.191 178.367 549.264 174.627 553.005C170.887 556.745 165.814 558.846 160.524 558.846C155.235 558.846 150.162 556.745 146.421 553.005C142.681 549.264 140.58 544.191 140.58 538.902V259.678ZM539.471 40.2878H389.887L378.169 16.9776C375.687 11.9941 371.864 7.80211 367.129 4.8732C362.394 1.94429 356.936 0.394663 351.369 0.398656H208.89C203.335 0.377302 197.886 1.92115 193.169 4.85332C188.451 7.78549 184.654 11.9874 182.214 16.9776L170.496 40.2878H20.9123C15.6227 40.2878 10.5497 42.3891 6.8094 46.1294C3.06907 49.8697 0.967773 54.9427 0.967773 60.2323L0.967773 100.121C0.967773 105.411 3.06907 110.484 6.8094 114.224C10.5497 117.965 15.6227 120.066 20.9123 120.066H539.471C544.76 120.066 549.833 117.965 553.574 114.224C557.314 110.484 559.415 105.411 559.415 100.121V60.2323C559.415 54.9427 557.314 49.8697 553.574 46.1294C549.833 42.3891 544.76 40.2878 539.471 40.2878Z" fill="red"/>
+              </svg>
+            </svg>
+          </button>
         </div>
-    
+
+
+        <div class="filter-block">
+          <input type="number" id="maxPrice" placeholder="Max pris">
+          <input type="text" id="filterInput" placeholder="Filtrer varer..." />
+        </div>
+        
         <div class="result">
           <p id="displayItems"><!--Får innhold fra JS--></p>
         </div>

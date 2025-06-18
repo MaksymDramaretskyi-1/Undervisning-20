@@ -75,8 +75,6 @@ function getFilteredItems() {
   );
 }
 
-
-
 // Element for visning av handleliste
 // Hent DOM-elementet der vi skal vise handlelisten
 const displayItems = document.getElementById("displayItems"); 
@@ -90,8 +88,6 @@ const errorMessage = document.getElementById("errorMessage");
 
 // Lukk feilvindu-knapp
 const closeError = document.getElementById("closeError");
-
-
 
 // Funksjon for å vise feil
 function showError(message) {

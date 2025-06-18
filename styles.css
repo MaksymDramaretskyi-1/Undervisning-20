@@ -47,7 +47,7 @@ button {
 
 .product-card {
   background: #fff;
-  min-width: 200px;
+  width: 200px;
   max-height: 400px;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -83,8 +83,8 @@ button {
 
 .block_products {
   display: flex;
-  max-width: 880px;
-  max-height: 1000px;
+  max-width: 680px;
+  max-height: 100%;
 }
 
 .sectionHero {
@@ -94,6 +94,7 @@ button {
   width: 100%;
   padding: 40px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   transition: transform var(--transition), box-shadow var(--transition);
   overflow: hidden;
@@ -106,7 +107,7 @@ button {
 
 .sectionForm {
   display: block;
-  padding: 32px;
+  padding: 0px 32px;
   width: 500px;
   border-radius: 10px;
   border: 2px solid var(--gray-border);
@@ -281,11 +282,23 @@ button {
   .sectionHero {
     flex-direction: column;
   }
+
   .sectionForm {
+    max-width: 200px;
     border-right: none;
     border-bottom: 1px solid var(--gray-border);
   }
   .sectionForm button {
     flex: 1 1 100%;
   }
+
+  .block_products {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+
+  /* .product-grid {
+    width: 100px;
+  } */
 }

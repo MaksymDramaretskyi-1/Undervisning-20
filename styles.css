@@ -288,9 +288,9 @@ button {
 
     border-bottom: 1px solid var(--gray-border);
   }
-  .sectionForm button {
+  /* .sectionForm button {
     flex: 1 1 100%;
-  }
+  } */
 
   .block_products {
     display: flex;
@@ -298,8 +298,15 @@ button {
     max-width: 100%;
     margin-bottom: 60px;
   }
-
+  .close-btn-close{
+    border: none;
+  }
   /* .product-grid {
     width: 100px;
   } */
+  .close-btn-close {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
 }

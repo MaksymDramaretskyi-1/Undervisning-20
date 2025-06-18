@@ -285,7 +285,7 @@ button {
 
   .sectionForm {
     max-width: 200px;
-    border-right: none;
+
     border-bottom: 1px solid var(--gray-border);
   }
   .sectionForm button {
